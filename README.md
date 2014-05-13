@@ -9,6 +9,16 @@ https://github.com/mstrisoline/ansible-logstash-play
 
 This is a barebones ansible role to pull logstash from the official elasticsearch repos on debian based distributions.
 
+## Quickstart
+
+If you have hosts defined in your current ansible installation:
+
+    ansible-playbook -i hosts/production roles/logstash/logstash.yml
+
+For a one-off given an IP address (mind the final comma):
+
+	ansible-playbook roles/logstash/logstash.yml -i 10.0.100.50,
+
 ## What this role does not do
 
 It does not configure logstash. There are many complex and different ways to configure it, so I leave
