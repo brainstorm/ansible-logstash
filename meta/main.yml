@@ -1,16 +1,15 @@
 #File meta/main.yml
 ---
 galaxy_info:
-  author: "Matthew Trisoline"
-  description: "Ansible role that installs Logstash to RHEL Based Systems"
+  author: "Roman Valls Guimera"
+  description: "Ansible role that installs Logstash"
   license: MIT
   min_ansible_version: 1.4
   platforms:
-    - name: Fedora
+    - name: Ubuntu
       versions:
-        - 18
-        - 19
-        - 20
+        - 14.04
+        - 14.10
   categories:
-    - monitorin
+    - monitoring
 dependencies: []
